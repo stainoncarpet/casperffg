@@ -6,7 +6,8 @@ The contract is written in Solidity. Hardhat, Ethers, Mocha, and Chai are used f
 ## Run tests:
 
 1. *npx hardhat test test/Casper.ts*
-2. *npx hardhat coverage*
+2. *REPORT_GAS=true npx hardhat test*
+3. *npx hardhat coverage*
 
 ## Set ALCHEMY_API_KEY and SEPOLIA_PRIVATE_KEY environment variables:
 

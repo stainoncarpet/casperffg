@@ -18,6 +18,12 @@ const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
   networks: {
+    hardhat: {
+      mining: {
+        auto: false,
+        interval: 1000
+      }
+    },
     sepolia: {
       url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [SEPOLIA_PRIVATE_KEY]
