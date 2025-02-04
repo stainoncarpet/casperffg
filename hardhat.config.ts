@@ -22,7 +22,8 @@ const config: HardhatUserConfig = {
       mining: {
         auto: false,
         interval: 1000
-      }
+      },
+      blockGasLimit: 99999999999999
     },
     sepolia: {
       url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
